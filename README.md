@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# CineTrack 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CineTrack is a movie tracking application built with ReactJS that allows users to search for, save, and manage their favorite movies. The app fetches data from the **Movie Database API (TMDb)** and provides an interactive, user-friendly interface. This project showcases my expertise in front-end development, API integration, and creating intuitive user experiences.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features ✨
+- Search for movies by title, genre, or actor.
+- View movie details including ratings, posters, and descriptions.
+- Add and remove movies from your watchlist.
+- Mobile-responsive design for a seamless experience on all devices.
+- Pagination and dynamic rendering for optimal user experience.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies and Skills Demonstrated 🛠️
+- **ReactJS**: Built reusable components and managed state with React hooks.
+- **TMDb API**: Integrated a movie database API to fetch real-time data.
+- **CSS (Styled Components)**: Applied modern styling techniques for a polished user interface.
+- **JavaScript (ES6)**: Used modern JavaScript features like `async/await` for API requests and state management.
+- **Responsive Design**: Ensured a smooth experience on both desktop and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Demo 🚀
+[Live Demo](https://www.robsonmuniz.pt)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![CineTrack in Action](https://example.com/cinetrack-demo.gif)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges and Solutions 🧩
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **API Integration**: Implemented seamless fetching of data from the TMDb API using `fetch` and `async/await`.
+- **State Management**: Leveraged React hooks such as `useState` and `useEffect` to manage movie data and state transitions.
+- **User Interaction**: Designed intuitive user flows for adding/removing movies to/from the watchlist and ensuring a smooth browsing experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Get in Touch
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I’m always open to new opportunities! If you're looking for a skilled front-end developer for your team or project, feel free to reach out via:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [LinkedIn](https://www.linkedin.com/in/robson-muniz/)
+- [GitHub](https://github.com/robson-muniz)
+- [Twitter](https://x.com/WebDevMadeEasy)
+- [YouTube](https://www.youtube.com/@DevMadeEasy)
+- [DEV.to](https://dev.to/robsonmuniz16)
+- 📧 Email: [robson_muniz@outlook.com](mailto:robson_muniz@outlook.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Quick Start
 
-## Learn More
+```bash
+# Clone repository
+git clone https://github.com/robson-muniz/tic-tac-toe-reactJS.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+cd tic-tac-toe-reactJS && npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Launch development server
+npm start
+```
 
-### Code Splitting
+Visit `http://localhost:3000` to see the application in action, or check out the [live version]().
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
