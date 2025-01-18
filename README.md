@@ -41,7 +41,7 @@ CineTrack is a movie tracking application built with ReactJS that allows users t
 
 I’m always open to new opportunities! If you're looking for a skilled front-end developer for your team or project, feel free to reach out via:
 
-- [LinkedIn](https://www.linkedin.com/in/robson-muniz/)
+- [LinkedIn](https://www.linkedin.com/in/robsonmuniz/)
 - [GitHub](https://github.com/robson-muniz)
 - [Twitter](https://x.com/WebDevMadeEasy)
 - [YouTube](https://www.youtube.com/@DevMadeEasy)
