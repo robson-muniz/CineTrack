@@ -28,6 +28,22 @@ function MovieDetails({ selectedId, onCloseMovie, apiKey, onWatched, watched}) {
       onWatched(newMovie)
       onCloseMovie()
  }
+
+ useEffect(() => {
+   function callback(e) {
+     if (e.code === 'Escape') {
+       onCloseMovie()
+       console.log('Closing Movie')
+     }
+   }
+   document.addEventListener('keydown', callback)
+
+   return () => {
+     document.removeEventListener('keydown', callback)
+   }
+ }, [onCloseMovie])
+
+
    useEffect(function (){
       async function getMovieDetails() {
          setIsLoading(true)
@@ -40,6 +56,16 @@ function MovieDetails({ selectedId, onCloseMovie, apiKey, onWatched, watched}) {
       getMovieDetails()
      console.log("Current user rating:", userRating);
    }, [selectedId])
+
+  useEffect(function (){
+    if(!title) return;
+    document.title = `Movie | ${title}`;
+
+    return function() {
+      document.title = "usePopcorn";
+    }
+
+  }, [title])
 
    return (
      <div className="details">
