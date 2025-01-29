@@ -13,9 +13,9 @@ import ErrorMessage from "./components/ErrorMessage";
 import MovieDetails from "./components/MovieDetails";
 
 function App() {
-   const [query, setQuery] = useState("inception");
+   const [query, setQuery] = useState("");
    const [movies, setMovies] = useState(tempMovieData);
-   const [watched, setWatched] = useState([0]);
+   const [watched, setWatched] = useState([]);
    const [isLoading, setIsLoading] = useState(false);
    const [error, setError] = useState("");
    const [selectedId, setSelectedId] = useState(null);
@@ -48,7 +48,7 @@ function App() {
   }
 
   function handleWatched(movie){
-    setWatched(prevWatched => [...prevWatched, movie])
+    setWatched(watched => [...watched, movie])
   }
 
 
