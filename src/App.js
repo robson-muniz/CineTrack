@@ -15,10 +15,16 @@ import MovieDetails from "./components/MovieDetails";
 function App() {
    const [query, setQuery] = useState("");
    const [movies, setMovies] = useState(tempMovieData);
-   const [watched, setWatched] = useState([]);
    const [isLoading, setIsLoading] = useState(false);
    const [error, setError] = useState("");
    const [selectedId, setSelectedId] = useState(null);
+
+  // Load watched movies from localStorage on initial render
+   const [watched, setWatched] = useState(function (){
+     const storedMovies = JSON.parse(localStorage.getItem("watched"));
+     return storedMovies;
+   });
+
 
    const KEY = 'a67d9238'
 
@@ -49,7 +55,13 @@ function App() {
 
   function handleWatched(movie){
     setWatched(watched => [...watched, movie])
+
+    // localStorage.setItem("watched", JSON.stringify([...watched, movie]))
   }
+
+  useEffect(() => {
+    localStorage.setItem("watched", JSON.stringify(watched))
+  }, [watched])
 
 
 
