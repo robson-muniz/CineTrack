@@ -59,6 +59,10 @@ function App() {
     // localStorage.setItem("watched", JSON.stringify([...watched, movie]))
   }
 
+  function handleDeleteWatched(id) {
+    setWatched(watched => watched.filter(movie => movie.imdbID !== id));
+  }
+
   useEffect(() => {
     localStorage.setItem("watched", JSON.stringify(watched))
   }, [watched])
@@ -131,7 +135,7 @@ function App() {
                 ) : (
                   <>
                     <WatchedSummary watched={watched} />
-                    <WatchedMovieList watched={watched} />
+                    <WatchedMovieList watched={watched} onDeleteWatched={handleDeleteWatched} />
                   </>)
 
               }
